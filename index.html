@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title>
+			Search Github Repositories
+		</title>
+		<link type="text/css" rel="stylesheet" href="css/app.css">
+	</head>
+	<body>
+		<div id="content">
+		<p>Search Github Repositories</p>
+		<div>
+			<form>
+			<input type="text" size=30 name="query" placeholder="Input search query" /><input type="submit"/>
+			</form>
+			<p>
+				<strong>
+					Total repo found:
+				</strong>
+				{{total_count}} 
+				
+			</p>
+			<p>
+				<strong>
+					Showing
+				</strong>
+				{{showing}}
+			</p>
+			<div>
+			<p>
+			<span class="prev-page"> {{#prev_page}}<a href="{{prev_page}}">&lt&lt</a>{{/prev_page}}</span>
+			<span class="next-page"> {{#next_page}}<a href="{{next_page}}">&gt&gt</a>{{/next_page}}</span>
+			</p>
+			</div>
+			{{#items}}
+			 
+				<p>
+					<!-- <span class="label">Repo</span> -->
+					<span>{{name}}</span>
+					<!-- <span class="label">by</span><span>{{owner.login}}</span> -->
+					<!-- <span class="label">Watch</span> -->
+					(<span>{{watchers}}</span>/
+					<!-- <span class="label">Start</span> -->
+					<span>{{stargazers_count}}</span>/
+					<!-- <span class="label">Fork</span> -->
+					<span>{{forks}}</span>)
+				</p>
+				<p>
+					<!-- <span class="label">Description</span> -->
+					<span>{{description}}</span>
+				</p>
+				<p>
+					<!-- <span class="label">URL</span><span> -->
+					<a href="{{html_url}}">{{html_url}}</a></span>
+				</p>
+				
+				
+				<hr>
+				
+			{{/items}}
+			<div>
+			<p>
+			<span class="prev-page"> {{#prev_page}}<a href="{{prev_page}}">&lt&lt</a>{{/prev_page}}</span>
+			<span class="next-page"> {{#next_page}}<a href="{{next_page}}">&gt&gt</a>{{/next_page}}</span>
+			</p>
+			</div>
+		</div>
+		
+		
+		</div>
+	</body>
+</html>

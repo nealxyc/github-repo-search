@@ -1,0 +1,58 @@
+
+/*burt.css*/
+body {
+    font-family: Georgia;
+    color: #333;
+}
+
+#content {
+    width: 800px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.label{
+	margin: 5px;
+	/*padding-right: 5px;*/
+}
+
+textarea, .html {
+    border: 1px solid #bbb;
+    padding: 5px;
+    width: 100%;
+    height: 350px;
+    font-size: 18px;
+    font-family: Inconsolata, monaco, courier;
+    margin-bottom: 20px;
+}
+
+.json {
+  margin-bottom: 0;
+}
+
+.run {
+    margin-bottom: 20px;
+    font-size: 130%;
+}
+
+.search-box{
+	height: 40px;
+	width: 300px;
+}
+.search-button{
+	height: 40px;
+	width: 80px;
+}
+
+.next-page{
+	float: right;
+}
+
+.prev-page{
+	
+}

@@ -1,0 +1,17 @@
+{
+  "name": "github-search",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.8.8",
+    "github": "^0.2.2",
+    "mu2": "^0.5.20"
+  }
+}
