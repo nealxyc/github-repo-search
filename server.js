@@ -29,7 +29,7 @@ app.get("/", function(req, resp){
             if(page > 1){
                 res.prev_page = req.route.path + "?query=" + query + "&page=" + (page - 1) ;
             }
-            res.showing = (30 * (page - 1) + 1) + "-" + Math.min(res.total_count, (30 * page)) ;
+            res.showing = Math.min(res.total_count, (30 * (page - 1) + 1)) + "-" + Math.min(res.total_count, (30 * page)) ;
             mu.compileAndRender('index.html', res).pipe(resp);
         });
     }else{

@@ -12,7 +12,7 @@
 			<form>
 			<input type="text" size=30 name="query" placeholder="Input search query" /><input type="submit"/>
 			</form>
-			{{#total_count}}
+			{{#showing}}
 			<p>
 				<strong>
 					Total repo found:
@@ -20,7 +20,7 @@
 				{{total_count}} 
 				
 			</p>
-			{{/total_count}}
+			{{/showing}}
 			{{#showing}}
 			<p>
 				<strong>
