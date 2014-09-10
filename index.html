@@ -12,6 +12,7 @@
 			<form>
 			<input type="text" size=30 name="query" placeholder="Input search query" /><input type="submit"/>
 			</form>
+			{{#total_count}}
 			<p>
 				<strong>
 					Total repo found:
@@ -19,12 +20,15 @@
 				{{total_count}} 
 				
 			</p>
+			{{/total_count}}
+			{{#showing}}
 			<p>
 				<strong>
 					Showing:
 				</strong>
 				{{showing}}
 			</p>
+			{{/showing}}
 			<div>
 			<p>
 			<span class="prev-page"> {{#prev_page}}<a href="{{prev_page}}">&lt&lt</a>{{/prev_page}}</span>
